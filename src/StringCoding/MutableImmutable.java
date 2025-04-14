@@ -7,7 +7,10 @@ public class MutableImmutable {
 String s=new String("Java");
 //String s="Techie"; //we cant add (immutable)
 s.concat("Techie");
+String news="Techie";
+news =s.concat(news);
 System.out.println(s);
+System.out.println("news object : "+news);
 
 StringBuffer sb=new StringBuffer("Core");//mutable
 sb.append("java");
